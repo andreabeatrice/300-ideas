@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
 public class Autoscroll : MonoBehaviour
 {
-    float speed = 100.0f;
+    float speed = 70.0f;
     //float textPosBegin = -707.0f;
     float boundaryTextEnd = 4044.0f;
 
     RectTransform myGORectTransform;
     [SerializeField]
-    TextMeshProUGUI mainText;
+    GameObject mainText;
 
-   // [SerializeField]
-   // bool isLooping = false; 
+    //Misspelled Words
+
+    TextMeshProUGUI wrong1;
+
+    // [SerializeField]
+    // bool isLooping = false; 
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +41,7 @@ public class Autoscroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
             counter++;
 
@@ -47,15 +53,13 @@ public class Autoscroll : MonoBehaviour
             StartCoroutine(SlowDownPowerUp());
         }
         
-
-        
     }
 
     IEnumerator SlowDownPowerUp()
     {
         yield return new WaitForSecondsRealtime(5);
         counter = 0;
-        speed = 100.0f;
+        speed = 70.0f;
     }
 
     int counter = 0;
@@ -66,6 +70,7 @@ public class Autoscroll : MonoBehaviour
         {
         }
     }
+
 
 
 }
