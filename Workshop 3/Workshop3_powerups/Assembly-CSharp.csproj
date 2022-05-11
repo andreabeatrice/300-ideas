@@ -60,7 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\ClickCounter.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Scroll.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/u19130938/Documents/GitHub/300-ideas/Workshop 3/Workshop3_powerups/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
