@@ -287,6 +287,23 @@ public class mojpal : MonoBehaviour
 	public void retry()
     {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+		firstletter_input.text = "";
+		secondletter_input.text = "";
+		thirdletter_input.text = "";
+		fourthletter_input.text = "";
+		fifthletter_input.text = "";
+		l1 = ' ';
+		l2 = ' ';
+		l3 = ' ';
+		l4 = ' ';
+		l5 = ' ';
+		letter1 = new char[26];
+		letter2 = new char[26];
+		letter3 = new char[26];
+		letter4 = new char[26];
+		letter5 = new char[26];
+		words = 0;
 	}
 	
 	void Start()
