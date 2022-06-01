@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/groundfloor_scene.unity
+- path: Assets/Scenes/closet_scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
